@@ -39,7 +39,7 @@ messageElement.textContent=MESSAGE;
 /* Shrink the text to fit the available card space on each screen size. */
 function fitMessage(){
   let size=Math.min(36,Math.max(16,window.innerWidth*.055));
-  const minSize=12;
+  const minSize=8;
   messageElement.style.fontSize=size+"px";
   messageCard.style.overflowY="hidden";
   messageElement.style.maxHeight="100%";
